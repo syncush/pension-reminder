@@ -16,7 +16,7 @@
                 "DATE_YEAR": "2061",
                 "DATE_MONTH": "1",
                 "DATE_DAY": "1",
-                "SLACK_WEBHOOK_URL": "https://hooks.slack.com/services/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"
+                "SLACK_WEBHOOK_URL": "SOME_WEBHOOK_URL"
             }
         }
     ]
