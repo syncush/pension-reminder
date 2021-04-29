@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}",
+            "env": {
+                "DATE_YEAR": "2061",
+                "DATE_MONTH": "1",
+                "DATE_DAY": "1",
+                "SLACK_WEBHOOK_URL": "https://hooks.slack.com/services/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"
+            }
+        }
+    ]
+}

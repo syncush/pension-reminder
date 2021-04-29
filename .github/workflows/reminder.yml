@@ -1,0 +1,31 @@
+name: reminder
+
+on:
+  schedule:
+    - cron: '00 9 */1 * *'
+  workflow_dispatch:
+
+jobs:
+  remind:
+    name: remind
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: run script
+        run: node reminder.js
+        env:
+          DATE_YEAR: "2061"
+          DATE_MONTH: "1"
+          DATE_DAY: "1"
+          SLACK_WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
