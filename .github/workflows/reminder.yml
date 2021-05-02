@@ -28,4 +28,4 @@ jobs:
           DATE_YEAR: "2061"
           DATE_MONTH: "1"
           DATE_DAY: "1"
-          SLACK_WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
